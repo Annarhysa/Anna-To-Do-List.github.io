@@ -66,6 +66,7 @@ input, button{
     font-weight: 700;
     background-image: linear-gradient(to right, var(--blue), 
     var(--darkblue));
+    text-transform: uppercase;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     cursor: pointer;
@@ -133,4 +134,23 @@ main{
     text-transform: uppercase;
     transition: 0.4s;
 
+}
+
+.task .actions button:hover{
+    opacity: 0.8;
+}
+
+.task .actions button:active{
+    opacity: 0.6;
+}
+
+.task .actions .edit{
+    background-image: linear-gradient(to right, var(--blue), 
+    var(--darkblue));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.task .actions .delete{
+    color: crimson;
 }
