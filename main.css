@@ -15,7 +15,7 @@
 
 body{
     display: flex;
-    flex-direction: coulmn;
+    flex-direction: column;
     min-height: 100vh;
     background: var(--darkest);
     color: var(--light);
@@ -64,8 +64,7 @@ input, button{
     color: var(--blue);
     font-size: 1.25rem;
     font-weight: 700;
-    background-image: linear-gradient(to right, var(--blue), 
-    var(--darkblue));
+    background-color: var(--light);
     text-transform: uppercase;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -109,6 +108,9 @@ main{
     margin-bottom: 1rem;
 }
 
+#tasks .task .content{
+    flex: 1 1 0%;
+}
 #tasks .task .content .text{
     color: var(--light);
     font-size: 1.125rem;
@@ -145,8 +147,7 @@ main{
 }
 
 .task .actions .edit{
-    background-image: linear-gradient(to right, var(--blue), 
-    var(--darkblue));
+    background-color: var(--light);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
